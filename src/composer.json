@@ -1,0 +1,17 @@
+{
+    "name": "reyni/code",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "controller\\": "controller/",
+            "model\\": "model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aurore Reynier",
+            "email": "reynier.aurore@gmail.com"
+        }
+    ],
+    "require": {}
+}

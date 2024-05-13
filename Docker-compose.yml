@@ -1,0 +1,27 @@
+services:
+  php:
+    image: php:8.3-apache
+    volumes:
+      - ./src:/var/www/html # Montez le répertoire contenant vos scripts PHP
+    ports:
+      - "8000:80" # Exposez le port 8000 de la machine hôte
+  db:
+    image: mysql:8.0.19
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: marvel
+      MYSQL_USER: user
+      MYSQL_PASSWORD: mdp
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.2
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      - PMA_HOST=db
