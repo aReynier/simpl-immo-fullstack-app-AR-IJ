@@ -1,12 +1,16 @@
 services:
   php:
     image: php:8.3-apache
+    container_name: simplimmo
+    build:
+      context: ./html
     volumes:
-      - ./src:/var/www/html # Montez le répertoire contenant vos scripts PHP
+      - ./html:/var/www/html # Montez le répertoire contenant vos scripts PHP
     ports:
       - "8000:80" # Exposez le port 8000 de la machine hôte
   db:
     image: mysql:8.0.19
+    container_name: simplimmo_database
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -15,9 +19,14 @@ services:
       MYSQL_PASSWORD: mdp
     ports:
       - "3306:3306"
+    volumes: # Permet la persistance des données
+      - ./data/mysql:/var/lib/mysql
+      - ./data/conf:/etc/mysql/conf.d
+      - ./data/logs:/logs
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:5.0.2
+    container_name: simplimmo_phpmyadmin
     restart: always
     depends_on:
       - db
