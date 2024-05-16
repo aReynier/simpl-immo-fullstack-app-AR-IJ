@@ -6,7 +6,8 @@
             "Controllers\\": "Controllers/",
             "Models\\": "Models/",
             "Classes\\": "Classes/",
-            "Services\\": "Services/"
+            "Services\\": "Services/",
+            "Repositories\\": "Repositories/"
         }
     },
     "authors": [

@@ -4,12 +4,13 @@ namespace Controllers;
 
 use Services\Response;
 use Classes\DBConfig;
+use Repositories\EstateRepository;
 use PDO;
 
 /**
 * 
 */
-class EstateController extends DBConfig {
+class EstateController {
     use Response;
 
     // private $propertySurface;
@@ -34,12 +35,17 @@ class EstateController extends DBConfig {
     */
     public function index() {
         echo "coucou";
-        $db = new DBConfig();
-        $db->getConnection();
-        $stmt = $db->connection->prepare("SELECT * FROM Estate");
-        $stmt->execute();
-        print_r($stmt->fetchAll(PDO::FETCH_OBJ));
-        $this->render('EstateTemplate');
+
+        $estateRepository = new EstateRepository();
+        $estates = $estateRepository->getAllEstates();
+        var_dump($estates);
+
+        // $db = new DBConfig();
+        // $db->getConnection();
+        // $stmt = $db->connection->prepare("SELECT * FROM Estate");
+        // $stmt->execute();
+        // print_r($stmt->fetchAll(PDO::FETCH_OBJ));
+        // $this->render('EstateTemplate');
      }
 
     public function displayAllEstates() {
