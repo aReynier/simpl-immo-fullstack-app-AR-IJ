@@ -64,4 +64,14 @@ class House extends Estate
     {
         $isTerrace->isTerrace = $isTerrace;
     }
+
+    public function getHouseEstateId()
+    {
+        return $this->houseEstateId;
+    }
+
+    public function setHouseEstateId($flatEstateId)
+    {
+        $houseEstateId->houseEstateId = $houseEstateId;
+    }
 }
