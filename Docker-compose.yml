@@ -18,7 +18,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: mdp
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes: # Permet la persistance des données
       - ./data/mysql:/var/lib/mysql
       - ./data/conf:/etc/mysql/conf.d

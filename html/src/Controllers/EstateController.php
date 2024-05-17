@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+use Repositories\AdminRepository;
 use Services\Response;
 use Classes\DBConfig;
 use Repositories\EstateRepository;
@@ -49,6 +50,13 @@ class EstateController {
     public function displayAllEstates() {
         echo "Here is all estates";
         $this->render('EstateTemplate');
+    }
+
+    public function login(){
+        echo "Admin Portail";
+        $adminRepository = new AdminRepository();
+        $admin= $adminRepository->getAdmin();
+        var_dump($admin);
     }
 
     public function pageNotFound() {
