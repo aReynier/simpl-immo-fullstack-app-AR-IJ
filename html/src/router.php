@@ -23,7 +23,6 @@ $route = $_SERVER['REQUEST_URI'];
 switch ($route) {
     case URL_HOMEPAGE: // If the URI matches the homepage
         $estateController->index();
-        echo "welcome";
         break;
     case URL_ALL_ESTATES: // If the URI matches the customer page displaying all estates
         $estateController->displayAllEstates();

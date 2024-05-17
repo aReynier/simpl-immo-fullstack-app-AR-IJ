@@ -34,8 +34,6 @@ class EstateController {
     * 
     */
     public function index() {
-        echo "coucou";
-
         $estateRepository = new EstateRepository();
         $estates = $estateRepository->getAllEstates();
         var_dump($estates);
