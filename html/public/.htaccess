@@ -11,6 +11,8 @@
   # Checks if the request doesn't match an existing folder on the server
   RewriteCond %{REQUEST_FILENAME} !-d
 
+  # Aurore: try to Handle favicon redirection, doesn't work as expected
+  # RewriteRule ^(.*)favicon\.(gif|ico|png|jpe?g)$ /public/favicon.ico [NC,L]
 
 	# Redirects all the requests that don't match a file or folder to index.php
 

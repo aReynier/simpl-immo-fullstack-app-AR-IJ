@@ -24,7 +24,6 @@ class DBConfig {
     public function getConnection() {
         try {
             $this->connection = new PDO("mysql:host=$this->host;dbname=$this->dbname",$this->user, $this->pass);
-            // echo "connected !";
         } catch (PDOException $e) {
             throw new PDOException($e->getMessage());
         }
