@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Simpl'immo | Page d'accueil</title>
-        <meta name="description" content="Simpl'immo est une agance basée sur Paris">
+        <meta name="description" content="Simpl'immo est une agence basée sur Paris">
         <meta name="author" content="Kimarotec">
         <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -321,7 +321,7 @@
                             <div class="col-sm-6 col-md-3 p0">
                                 <div class="box-tree more-proerty text-center">
                                     <div class="more-entry overflow">
-                                        <a href="property"><button class="btn border-btn more-black" value="All properties">Voir tous les biens</button></a>
+                                        <a href="estates"><button class="btn border-btn more-black" value="All properties">Voir tous les biens</button></a>
                                     </div>
                                 </div>
                             </div>

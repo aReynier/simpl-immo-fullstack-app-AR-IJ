@@ -52,7 +52,12 @@ class EstateController {
     //     }
 
     public function displayAllEstates() {
-        echo "Here is all estates";
+        $estateRepository = new EstateRepository();
+        $estates = $estateRepository->getAllEstates();
+        $viewData = ['estates' => $estates];
+        $this->render('Components/HeaderComponent');
+        $this->render('EstateViews/EstateList', $viewData);
+        $this->render('Components/FooterComponent');
     }
 
     // public function login(){
@@ -61,6 +66,10 @@ class EstateController {
     //     $admin= $adminRepository->getAdmin();
     //     var_dump($admin);
     // }
+
+    public function displayEstateDetail() {
+        
+    }
 
     public function pageNotFound() {
         

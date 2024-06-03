@@ -1,2 +1,6 @@
 [auto]
+<<<<<<< HEAD
 server-uuid=6d430e48-218c-11ef-bfda-0242ac120002
+=======
+server-uuid=17cfdb6c-217c-11ef-b7c6-0242ac120003
+>>>>>>> 57a9c43 (implement home page front-end)
