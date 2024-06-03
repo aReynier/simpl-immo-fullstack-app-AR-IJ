@@ -27,6 +27,21 @@ switch ($route) {
     case URL_ALL_ESTATES: // If the URI matches the customer page displaying all estates
         $estateController->displayAllEstates();
         break;
+
+       case URL_ADMIN_LOGIN: // portail admin
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $adminController->authenticate();
+        } else {
+            $adminController->showLoginForm();
+        }
+        break;
+    case URL_ADMIN_DASHBOARD:
+        $adminController->dashboard();
+        break;
+    case URL_ADMIN_LOGOUT:
+        $adminController->logout();
+        break;
+
     // case URL_ESTATE_DETAIL: // If the URI matches the customer page displaying one specific estate
     //     $estateController->displayEstateDetail();
     //     break;
