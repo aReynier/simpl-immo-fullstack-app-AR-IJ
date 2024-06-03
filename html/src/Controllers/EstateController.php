@@ -52,12 +52,12 @@ class EstateController {
         $this->render('EstateTemplate');
     }
 
-    public function login(){
-        echo "Admin Portail";
-        $adminRepository = new AdminRepository();
-        $admin= $adminRepository->getAdmin();
-        var_dump($admin);
-    }
+    // public function login(){
+    //     echo "Admin Portail";
+    //     $adminRepository = new AdminRepository();
+    //     $admin= $adminRepository->getAdmin();
+    //     var_dump($admin);
+    // }
 
     public function pageNotFound() {
         

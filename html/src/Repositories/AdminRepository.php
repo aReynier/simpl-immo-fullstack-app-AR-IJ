@@ -24,7 +24,7 @@ Class AdminRepository extends DBConfig{
     * post login and password
     */
     public function sendAdmin($login, $password){
-        $query = 'INSERT INTO Admin (login, password)';
+        $query = 'INSERT INTO Admin (login, password) VALUES (:login, :password)';
         $db = new DBConfig();
         $db->getConnection();
         $req = $db->connection->prepare($query);
