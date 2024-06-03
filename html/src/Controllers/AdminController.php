@@ -16,6 +16,10 @@ class AdminController {
         var_dump($admin);
     }
 
+    /**
+    * post $login and $password
+    * verify and authentify, redirct & errors
+    */
     public function authenticate() {
   
         if (!empty($_POST['login']) && !empty($_POST['password'])) {
@@ -40,6 +44,9 @@ class AdminController {
         }
     }
 
+     /**
+    * show connexion form
+    */
     public function showLoginForm() {
         // formulaire de connexion
         echo '
@@ -54,6 +61,9 @@ class AdminController {
         </form>';
     }
 
+     /**
+    * show dashborad after connection
+    */
     public function dashboard() {
 
         if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
@@ -64,6 +74,9 @@ class AdminController {
         echo '<br><a href="' . URL_ADMIN_LOGOUT . '">Logout</a>'; 
     }
 
+    /**
+    * logout and redirect
+    */
     public function logout() {
         session_destroy();
         header('Location: ' . URL_ADMIN_LOGIN);
