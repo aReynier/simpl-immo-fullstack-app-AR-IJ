@@ -51,9 +51,9 @@ switch ($route) {
     // case URL_ADMIN_LOGIN: // If the URI matches the admin login page
     //     $adminController->login();
     //     break;
-    // case URL_FORM_ADD_ESTATE: // If the URI matches the admin adding estate form
-    //     $estateController->addEstate();
-    //     break;
+    case URL_FORM_ADD_ESTATE: // If the URI matches the admin adding estate form
+        $estateController->createEstate();
+        break;
     // case URL_LIST_ALL_ESTATE: // If the URI matches the admin list of all the estate
     //     $estateController->adminDisplayAllEstate();
     //     break;
