@@ -37,19 +37,22 @@ class EstateController {
     public function index() {
         $estateRepository = new EstateRepository();
         $estates = $estateRepository->getAllEstates();
-        var_dump($estates);
-
-        // $db = new DBConfig();
-        // $db->getConnection();
-        // $stmt = $db->connection->prepare("SELECT * FROM Estate");
-        // $stmt->execute();
-        // print_r($stmt->fetchAll(PDO::FETCH_OBJ));
-        // $this->render('EstateTemplate');
+        // var_dump($estates);
+        $viewData = ['estates' => $estates];
+        $this->render('Components/HeaderComponent');
+        $this->render('EstateViews/HomePageTemplate', $viewData);
+        // $this->render('EstateViews/HomePageTemplate', get_defined_vars() );
+        $this->render('Components/FooterComponent');
      }
+
+    //  public function view($view, $data=[])
+    //     {
+    //         extract($data);
+    //         require_once "./mvc/views/".$view.".php";
+    //     }
 
     public function displayAllEstates() {
         echo "Here is all estates";
-        $this->render('EstateTemplate');
     }
 
     // public function login(){
