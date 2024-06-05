@@ -80,7 +80,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="pull-left">
-                            <span><a href="">Termes et conditions</a></span><br/>
+                            <span><a href="">Termes et conditions</a></span><span> - </span><span><a href="/public/admin/login">Gestion</a></span><br/>
                             <span>Simpl'Immo 2024</span><br/>
                             <span> (C) <a href="http://www.KimaroTec.com">KimaroTheme</a> , All rights reserved 2016  </span>
                         </div>

@@ -7,8 +7,12 @@
 ./binlog.000008
 ./binlog.000009
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ./binlog.000010
 ./binlog.000011
 ./binlog.000012
 >>>>>>> 7dcac23 (implement home page front-end)
+=======
+./binlog.000010
+>>>>>>> 025dc4d (reorganisation before first delivery)

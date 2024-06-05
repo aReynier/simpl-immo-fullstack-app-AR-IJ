@@ -4,7 +4,7 @@
 define("BASE_URL", "/public");
 define("URL_HOMEPAGE", BASE_URL . "/");
 define("URL_ALL_ESTATES", BASE_URL . "/estates");
-define("URL_ESTATE_DETAIL", BASE_URL . "/estate");
+define("URL_ESTATE_DETAIL", BASE_URL . "/estate/(\d+)");
 define("URL_CONTACT_FORM", BASE_URL . "/contact");
 
 define("URL_ADMIN_LOGIN", BASE_URL . "/admin/login");
