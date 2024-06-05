@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Simpl'immo | Page d'accueil</title>
-        <meta name="description" content="Simpl'immo est une agance basée sur Paris">
+        <meta name="description" content="Simpl'immo est une agence basée sur Paris">
         <meta name="author" content="Kimarotec">
         <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +57,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                         <h2>Votre futur chez vous à portée de clic</h2>
-                        <div class="search-form wow pulse" data-wow-delay="0.8s">
+                        <!-- to add on a next version -->
+                        <!-- <div class="search-form wow pulse" data-wow-delay="0.8s">
                             <form action="" class=" form-inline">
                                 <div class="form-group">
                                     <select id="basic" class="selectpicker show-tick form-control" multiple title="Appartement/Maison">
@@ -97,7 +98,7 @@
                                             <b class="pull-left color">500€</b>
                                             <b class="pull-right color">1000000€</b>
                                         </div>
-                                        <!-- End of  -->
+                                         End of 
 
                                         <div class="form-group mar-l-20">
                                             <label for="property-geo">Surface:</label>
@@ -107,7 +108,7 @@
                                             <b class="pull-left color">40m²</b>
                                             <b class="pull-right color">1200m²</b>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
                                     </div>
 
                                     <div class="search-row">
@@ -120,7 +121,7 @@
                                             <b class="pull-left color">1</b>
                                             <b class="pull-right color">12</b>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                         <div class="form-group mar-l-20">
                                             <label for="min-bed">Nb de chambres:</label>
@@ -130,7 +131,7 @@
                                             <b class="pull-left color">1</b>
                                             <b class="pull-right color">12</b>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                     </div>
 
@@ -144,7 +145,7 @@
                                             <b class="pull-left color">1</b>
                                             <b class="pull-right color">5</b>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                         <div class="form-group  mar-l-20">
                                         <label for="heat">Chauffage:</label>
@@ -153,7 +154,7 @@
                                                 <option>Gaz</option>
                                             </select>
                                         </div>
-                                        <!-- End of  -->
+                                         End of 
 
                                     </div>
                                     <br>
@@ -166,7 +167,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                         <div class="form-group">
                                             <div class="checkbox">
@@ -175,7 +176,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                         <div class="form-group">
                                             <div class="checkbox">
@@ -184,7 +185,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
                                     </div>
 
                                     <div class="search-row">
@@ -196,7 +197,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                         <div class="form-group">
                                             <div class="checkbox">
@@ -205,7 +206,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                        End of 
 
                                         <div class="form-group">
                                             <div class="checkbox">
@@ -214,7 +215,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
                                     </div>
 
                                     <div class="search-row">
@@ -226,7 +227,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                        End of  
 
                                         <div class="form-group">
                                             <div class="checkbox">
@@ -235,7 +236,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of 
 
                                         <div class="form-group">
                                             <div class="checkbox">
@@ -244,7 +245,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
 
                                     </div>
 
@@ -257,7 +258,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- End of  -->
+                                         End of  
                                         <br>
                                         <hr>
                                     </div>
@@ -266,7 +267,8 @@
 
                             </form>
                             <button class="btn toggle-btn criteria-btn" type="button"><i class="fa fa-arrow-circle-down"></i> Plus de critères</button>
-                        </div>
+                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -290,9 +292,9 @@
                     <div class="col-sm-6 col-md-3 p0">
                             <div class="box-two proerty-item">
                                 <div class="item-thumb">
-                                    <a href="property-1.html" ><img src="assets/img/demo/property-2.jpg"></a>
+                                    <a href="" ><img src="assets/img/no-photo-announce.jpg"></a>
                                     <div class="item-entry overflow">
-                                        <h5><a href="property-1.html"><?php echo $lastEstaste->title; ?></a></h5>
+                                        <h5><a href=""><?php echo $lastEstaste->title; ?></a></h5>
                                         <hr class="item-entry-separator my-2"/>
                                         <span class="pull-left"><?php 
                                             if ($lastEstaste->isHouse) {
@@ -309,8 +311,8 @@
                                         </div>
                                         <span class="pull-right">TTC</span><br/>
                                         <span class="pull-left">Surface <?php echo $lastEstaste->propertySurface; ?>m²</span>
-                                        <span class="proerty-price pull-right"><?php echo $lastEstaste->price; ?>€</span>
-                                        <button class="btn item-entry-button pull-right" value="All properties"><i class="fa fa-envelope"> </i> Contacter</button>
+                                        <span class="proerty-price pull-right"><?php echo $lastEstaste->price; ?>€</span><br/>
+                                        <a href="mailto:contact@simplimmo.com"><button class="btn item-entry-button pull-right" value="All properties"><i class="fa fa-envelope"> </i> Contacter</button></a>
                                     </div>
                                 </div>
 
@@ -321,7 +323,7 @@
                             <div class="col-sm-6 col-md-3 p0">
                                 <div class="box-tree more-proerty text-center">
                                     <div class="more-entry overflow">
-                                        <a href="property"><button class="btn border-btn more-black" value="All properties">Voir tous les biens</button></a>
+                                        <a href="estates"><button class="btn border-btn more-black" value="All properties">Voir tous les biens</button></a>
                                     </div>
                                 </div>
                             </div>

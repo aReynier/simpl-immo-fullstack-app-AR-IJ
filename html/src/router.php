@@ -42,9 +42,10 @@ switch ($route) {
         $adminController->logout();
         break;
 
-    // case URL_ESTATE_DETAIL: // If the URI matches the customer page displaying one specific estate
-    //     $estateController->displayEstateDetail();
-    //     break;
+    case URL_ESTATE_DETAIL: // If the URI matches the customer page displaying one specific estate
+        $estateController->displayEstateDetail($id);
+        break;
+
     // case URL_CONTACT_FORM: // If the URI matches the customer contact form
     //     $formController->sendForm();
     //     break;

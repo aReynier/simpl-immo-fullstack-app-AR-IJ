@@ -6,7 +6,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Simpl'immo | Page d'accueil</title>
         <meta name="description" content="Simpl'immo est une agance basée sur Paris">
         <meta name="author" content="Kimarotec">
         <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
@@ -75,17 +74,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand d-inline-flex justify-content-center align-items-center" href="index.html"><img src="assets/img/logo.png" alt="Logo de l'agence Simpl'Immo"></a>
+                    <a class="navbar-brand d-inline-flex justify-content-center align-items-center" href="/"><img src="assets/img/logo.png" alt="Logo de l'agence Simpl'Immo"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse yamm" id="navigation">
-                    <div class="button navbar-right pt-2">
-                        <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.45s">Connexion</button>
-                    </div>
                     <ul class="main-nav nav navbar-nav navbar-right">
                         <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" href="/">Accueil</a></li>
-                        <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property">Biens</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="estates">Biens</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
