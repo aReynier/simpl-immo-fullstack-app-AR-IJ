@@ -50,15 +50,16 @@ class AdminController {
     public function showLoginForm() {
         // formulaire de connexion
         echo '
-        <form method="POST" action="' . URL_ADMIN_LOGIN . '">
-            <label for="login">Login:</label>
-            <input type="text" id="login" name="login" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">Login</button>
-        </form>';
+        <div style="max-width: 600px; margin: auto; padding: 1em; border: 1px solid #ccc;">
+    <form method="POST" action="' . URL_ADMIN_LOGIN . '">
+            <label for="login" style="display: block; margin-bottom: 1em;">Login:</label>
+            <input type="text" id="login" name="login" required style="width: 100%; padding: 0.5em; margin-bottom: 1em; border: 1px solid #ccc;">
+            <label for="password" style="display: block; margin-bottom: 0.5em;">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 0.5em; margin-bottom: 1em; border: 1px solid #ccc;">
+            <button type="submit" style="width: 100%; padding: 0.5em; background-color: orange; color: white;">
+            Login</button>
+    </form>
+</div>';
     }
 
      /**
@@ -70,8 +71,11 @@ class AdminController {
             echo "Access denied. Please login first.";
             return;
         }
-        echo "Welcome to the Admin Dashboard!";
-        echo '<br><a href="' . URL_ADMIN_LOGOUT . '">Logout</a>'; 
+        echo '<div style="max-width: 600px; margin: auto; padding: 1em; border: 1px solid #ccc;">
+        <h2>Welcome to the Admin Dashboard!</h2>
+        <br><a href="' . URL_ADMIN_LOGOUT . '">Logout</a>; 
+        <br><a href="' . URL_FORM_ADD_ESTATE . '"> Ajouter une annonce </a></div>'; 
+
     }
 
     /**
