@@ -285,15 +285,15 @@
                 </div>
 
                 <div class="row">
-                    <div class="proerty-th">
+                    <div class="d-inline-flex flex-wrap">
                         
                     <?php $lastEstastes = array_reverse(array_slice($estates, -7)); ?>
                     <?php foreach ($lastEstastes as $lastEstaste): ?>
-                    <div class="col-sm-6 col-md-3 p0">
+                    <div class="col-sm-6 col-md-3 p0  px-2 py-2">
                             <div class="box-two proerty-item">
                                 <div class="item-thumb">
                                     <a href="" ><img src="assets/img/no-photo-announce.jpg"></a>
-                                    <div class="item-entry overflow">
+                                    <div class="item-entry overflow mx-3 my-3">
                                         <h5><a href=""><?php echo $lastEstaste->title; ?></a></h5>
                                         <hr class="item-entry-separator my-2"/>
                                         <span class="pull-left"><?php 
